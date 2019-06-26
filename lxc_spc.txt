@@ -1,0 +1,25 @@
+Set up Linux container on ubuntu desktop.
+Name: lxc_v0
+Date: 20xx-xx-xx
+
+1. sudo apt install lxc
+2. configure the lxc configure file
+  create the ~/.config/lxc directory if it doesn't exist.
+  copy /etc/lxc/default.conf to ~/.config/lxc/default.conf
+  append the following two lines to it:
+    lxc.idmap = u 0 100000 65536
+    lxc.idmap = g 0 100000 65536
+3. lxc-create -t download -n lxc_v0   
+please chose the DIST/RELEASE/ARCH.
+Distribution:
+ubuntu
+Release:
+trusty
+Architecture:
+i386
+4. check the lxc status 
+  lxc-info -n lxc_v0
+  lxc-ls -f
+5. start lxc
+  lxc-start -n lxc_v0 -d
+
