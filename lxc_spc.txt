@@ -2,7 +2,7 @@ Set up Linux container on ubuntu desktop.
 Name: lxc_v0
 Date: 20xx-xx-xx
 
-1. sudo apt install lxc
+1. sudo apt install lxc  lxc-templates
 2. configure the lxc configure file
   create the ~/.config/lxc directory if it doesn't exist.
   copy /etc/lxc/default.conf to ~/.config/lxc/default.conf
