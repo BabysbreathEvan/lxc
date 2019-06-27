@@ -1,0 +1,5 @@
+全局配置文:
+	对于特权容器，配置文件位于/etc/lxc
+	对于普通容器而言，配置文件位于~/.config/lxc下
+	以root身份创建的特权容器都位于/var/lbi/lxc下
+	普通用户创建的容器在~/.local/share/lxc目录下
